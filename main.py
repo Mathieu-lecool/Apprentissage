@@ -1,10 +1,13 @@
+#trinket.io/sense-hat
 from sense_emu import SenseHat
 
 sense = SenseHat()
 
-blue_color = [27, 172, 241]
-orange_color = [241, 69, 27]
-red_color = [255, 0, 0]
+blue_color = (27, 172, 241)
+orange_color = (241, 69, 27)
+red_color = (255, 0, 0)
+
+sense.show_message("Bonjour", text_colour=blue_color)
 
 while True:
     temperature = int(sense.get_temperature())
