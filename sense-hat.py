@@ -1,5 +1,5 @@
 #trinket.io/sense-hat
-from sense_hat import SenseHat
+from sense_emu import SenseHat
 
 sense = SenseHat()
 
